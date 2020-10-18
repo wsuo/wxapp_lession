@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#ff4001",
+  "navigationBarTitleText": "嗨购首页",
+  "navigationBarTextStyle": "white",
+  "backgroundColor": "#efefef",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "prolist": "/components/prolist/prolist"
+  }
+}

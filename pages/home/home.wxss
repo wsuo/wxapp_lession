@@ -1,0 +1,10 @@
+/* pages/home/home.wxss */
+.banner image {
+    width: 100%;
+}
+
+.backtop {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+}

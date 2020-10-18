@@ -1,0 +1,3 @@
+<button bindtap="chooseImage">修改头像</button>
+<button bindtap="showActionSheet">上传图片</button>
+<image wx:for="{{imagelist}}" wx:key="index" src="{{item}}"></image>

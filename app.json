@@ -1,0 +1,59 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/logs/logs",
+        "pages/index/index",
+        "pages/category/category",
+        "pages/user/user",
+        "pages/test/test",
+        "pages/detail/detail",
+        "pages/map/map"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#f66",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#333",
+        "selectedColor": "#f66",
+        "backgroundColor": "#efefef",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "首页",
+                "iconPath": "/resource/home.png",
+                "selectedIconPath": "/resource/home_active.png"
+            },
+            {
+                "pagePath": "pages/category/category",
+                "text": "分类",
+                "iconPath": "/resource/category.png",
+                "selectedIconPath": "/resource/category_active.png"
+            },
+            {
+                "pagePath": "pages/index/index",
+                "text": "购物车",
+                "iconPath": "/resource/cart.png",
+                "selectedIconPath": "/resource/cart_active.png"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "text": "我的",
+                "iconPath": "/resource/user.png",
+                "selectedIconPath": "/resource/user_active.png"
+            }
+        ]
+    },
+    "networkTimeout": {
+        "request": 6000,
+        "connectSocket": 6000
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "您的位置信息将被使用"
+        }
+    },
+    "sitemapLocation": "sitemap.json"
+}

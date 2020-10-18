@@ -1,0 +1,32 @@
+<view>
+    {{ message }}
+</view>
+
+<!-- Vue绑定属性 :class="message" -->
+<!-- React绑定属性 class={message} -->
+<view class="{{message}}">
+    组件属性
+</view>
+
+<!-- 控制属性 -->
+<!-- Vue v-if -->
+<view wx:if="{{flag}}">如果为真就显示</view>
+
+<checkbox checked="{{flag}}"></checkbox>
+
+<!-- Vue列表: v-for = 'item in list' -->
+<view wx:for="{{list}}" wx:key="index">
+    <text>{{index}}</text> - <text>{{item}}</text>
+</view>
+
+<!-- 双重循环: 起别名 -->
+<view wx:for="{{carList}}" wx:key="index">
+    {{item.brand}}
+    <view wx:for="{{item.list}}" wx:for-item='it' wx:key="idx" wx:for-index="idx">
+        <view>{{it}}</view>
+    </view>
+</view>
+
+<!-- 使用模板 -->
+<import src="./tem.wxml"></import>
+<template is="test" data="{{a:1}}"></template>

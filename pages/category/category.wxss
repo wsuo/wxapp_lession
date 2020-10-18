@@ -1,0 +1,8 @@
+/* pages/category/category.wxss */
+/* .test {
+    color: red;
+} */
+.prolist {
+    float: right;
+    width: 80%;
+}

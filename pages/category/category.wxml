@@ -1,0 +1,19 @@
+<!-- <van-tabs active="{{ active }}" bind:change="onChange">
+    <van-tab wx:for="{{titles}}" title="{{item}}" wx:key="cidx">
+        <van-sidebar active-key="{{ activeKey }}" bind:change="siderbarChange">
+            <van-sidebar-item title="{{item.brand}}" wx:for="{{brandlist}}" wx:key="bidx" bindtap="getKindList"
+                data-brand="{{item.brand}}" />
+        </van-sidebar>
+    </van-tab>
+</van-tabs> -->
+<van-tabs active="{{ active }}" bind:change="onChange">
+    <van-tab wx:for="{{titles}}" title="{{item}}" wx:key="index">
+        <view class="display: flex;">
+            <van-sidebar active-key="{{ activeKey }}" bind:change="sibebarChange">
+                <van-sidebar-item wx:for="{{brandlist}}" bindtap="getKindlist" data-brand="{{item.brand}}"
+                    title="{{item.brand}}" />
+            </van-sidebar>
+            <prolist prolist="{{kindlist}}" class="prolist" />
+        </view>
+    </van-tab>
+</van-tabs>

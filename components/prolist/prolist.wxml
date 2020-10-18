@@ -1,0 +1,27 @@
+<!--components/prolist/prolist.wxml-->
+<!-- <view class="prolist">
+    <navigator wx:for="{{prolist}}" wx:key="proid" url="{{'/pages/detail/detail?proid=' + item.proid}}">
+        <view class="proitem">
+        <view class="itemimg">
+            <image src="{{item.proimg}}"></image>
+        </view>
+        <view class="iteminfo">
+            <view class="h1">{{item.proname}}</view>
+            <view class="price">￥{{item.price}}</view>
+        </view>
+    </view>
+    </navigator>
+</view> -->
+<view class="prolist">
+    <view wx:for="{{prolist}}" wx:key="*this" bindtap="toDetail" data-proid="{{item.proid}}">
+        <view class="proitem">
+            <view class="itemimg">
+                <image src="{{item.proimg}}" class="image"></image>
+            </view>
+            <view class="iteminfo">
+                <view class="h1">{{item.proname}}</view>
+                <view class="price">￥{{item.price}}</view>
+            </view>
+        </view>
+    </view>
+</view>
